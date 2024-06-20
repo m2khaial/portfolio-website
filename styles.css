@@ -1,14 +1,15 @@
 body {
-    font-family: 'Cormorant Garamond, Segoe UI', Tahoma, Geneva, Verdana, cormorant garamond, ;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0; /* Background color */
+    background-color: #253551; /* Dark blue */
+    color: #E0E0DB; /* Light gray */
 }
 
 nav {
-    background-color: #444; /* Navigation background color */
-    color: white;
+    background-color: #2A2829; /* Dark gray */
+    color: #E0E0DB; /* Light gray */
     padding: 1em;
 }
 
@@ -16,11 +17,12 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li a {
-    color: white;
+    color: #E0E0DB; /* Light gray */
     text-decoration: none;
     padding: 0.5em 1em;
 }
@@ -31,16 +33,16 @@ nav ul li a:hover {
 }
 
 header {
-    background-color: #292929; /* Header background color */
+    background-color: #444; /* Dark gray */
     padding: 2em;
     text-align: center;
-    color: #f0f0f0; /* Header text color */
+    color: #E0E0DB; /* Light gray */
 }
 
 section {
     padding: 2em;
     margin: 1em;
-    background-color: #ddd; /* Section background color */
+    background-color: #E0E0DB; /* Light gray */
     border-radius: 10px;
 }
 
@@ -55,8 +57,8 @@ section {
 }
 
 footer {
-    background-color: #444; /* Footer background color */
-    color: white;
+    background-color: #2A2829; /* Dark gray */
+    color: #E0E0DB; /* Light gray */
     text-align: center;
     padding: 1em;
 }
@@ -88,7 +90,7 @@ form button:hover {
 /* Custom styles for each coding language */
 
 #vba h2 {
-    color: #185c37; /* VBA green */
+    color: #007bff; /* VBA blue */
 }
 
 #html h2 {
@@ -101,4 +103,23 @@ form button:hover {
 
 #python h2 {
     color: #3776ab; /* Python blue */
+}
+
+/* Contact section */
+
+#contact {
+    background-color: #444; /* Dark gray */
+    color: #E0E0DB; /* Light gray */
+    padding: 2em;
+    text-align: center;
+}
+
+#contact a {
+    color: #E0E0DB; /* Light gray */
+    text-decoration: none;
+    padding: 0 0.5em;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
