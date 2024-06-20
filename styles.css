@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ;
+    font-family: 'Cormorant Garamond, Segoe UI', Tahoma, Geneva, Verdana, cormorant garamond, ;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -88,7 +88,7 @@ form button:hover {
 /* Custom styles for each coding language */
 
 #vba h2 {
-    color: #007bff; /* VBA blue */
+    color: #185c37; /* VBA green */
 }
 
 #html h2 {
