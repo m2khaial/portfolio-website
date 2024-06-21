@@ -11,19 +11,13 @@ body {
 }
 
 .nav {
-    background-color: #2A2829;
+    background-color: linear-gradient(90deg, #339966 20%, #FF6347 20%, #f7df1e 20%, #306998 20%, #646464 );
     padding: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-left a {
-    color: #E0E0DB;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-}
 
 .nav-list {
     list-style: none;
@@ -47,7 +41,7 @@ body {
 .welcome-section {
     text-align: center;
     padding: 2em;
-    background-color: #444;
+    background-color: linear-gradient(#444,grey);
     color: #E0E0DB;
 }
 
