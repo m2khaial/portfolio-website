@@ -38,6 +38,12 @@ body {
     border-radius: 5px;
 }
 
+.nav-left a {
+    color: #E0E0DB;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
 .welcome-section {
     text-align: center;
     padding: 2em;
