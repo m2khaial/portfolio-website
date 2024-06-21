@@ -8,30 +8,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
+    <div class="container">
+        <h1 class="logo">Mai Khaial Portfolio</h1>
         <ul>
-            <li class="title_name">Mai Khaial Portfolio</li>
             <li><a href="#vba">VBA</a></li>
             <li><a href="#html">HTML</a></li>
             <li><a href="#javascript">JavaScript</a></li>
             <li><a href="#python">Python</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+    </div>
     </nav>
     <header>
-        <h1>My Portfolio</h1>
-        <p>I’m a Management Engineering student at the University of Waterloo with expertise in VBA, Excel, Python, and JavaScript. Committed to leveraging technology for streamlined solutions, adept at problem-solving, and dedicated to driving positive business outcomes. Passionate about innovative technology and delivering efficient and user-centric solutions. To showcase this, I created this website entirely using HTML. This website links all of my relevant projects.</p>
-    </header>
-
+        <div class="container">
+            <h1 class="page-title">My Portfolio</h1>
+            <p class="intro">I’m a Management Engineering student at the University of Waterloo with expertise in VBA, Excel, Python, and JavaScript. Committed to leveraging technology for streamlined solutions, adept at problem-solving, and dedicated to driving positive business outcomes. Passionate about innovative technology and delivering efficient and user-centric solutions. To showcase this, I created this website entirely using HTML. This website links all of my relevant projects.</p>
+        </div>
+    </header>    
     <section id="vba">
         <h2>VBA Projects</h2>
-        <div class="project">
+        <div class="container">
             <img src="images/vba_project1.png" alt="VBA Project 1">
             <div class="project-description">
                 <h3>Project 1: Excel Automation</h3>
                 <p>This project automates data entry and analysis in Excel using VBA scripts.</p>
             </div>
-        <div class="project">
+        <div class="container">
             <img src="images/vba_project2.png" alt="VBA Project 2">
             <div class="project-description">
                 <h3>Project 2: Reporting Dashboard</h3>
@@ -41,14 +43,14 @@
     </section>
     <section id="html">
         <h2>HTML Projects</h2>
-        <div class="project">
+        <div class="container">
             <img src="images/html_project1.png" alt="HTML Project 1">
             <div class="project-description">
                 <h3>Project 1: Personal Blog</h3>
                 <p>Developed a personal blog site with responsive design and SEO optimization.</p>
             </div>
         </div>
-        <div class="project">
+        <div class="container">
             <img src="images/html_project2.png" alt="HTML Project 2">
             <div class="project-description">
                 <h3>Project 2: Portfolio Website</h3>
@@ -58,14 +60,14 @@
     </section>
     <section id="javascript">
         <h2>JavaScript Projects</h2>
-        <div class="project">
+        <div class="container">
             <img src="images/js_project1.png" alt="JavaScript Project 1">
             <div class="project-description">
                 <h3>Project 1: Interactive To-Do List</h3>
                 <p>Created an interactive to-do list application with dynamic DOM manipulation.</p>
             </div>
         </div>
-        <div class="project">
+        <div class="container">
             <img src="images/js_project2.png" alt="JavaScript Project 2">
             <div class="project-description">
                 <h3>Project 2: Weather App</h3>
@@ -75,14 +77,14 @@
     </section>
     <section id="python">
         <h2>Python Projects</h2>
-        <div class="project">
+        <div class="container">
             <img src="images/python_project1.png" alt="Python Project 1">
             <div class="project-description">
                 <h3>Project 1: Data Analysis</h3>
                 <p>Performed data analysis on a large dataset using pandas and matplotlib.</p>
             </div>
         </div>
-        <div class="project">
+        <div class="container">
             <img src="images/python_project2.png" alt="Python Project 2">
             <div class="project-description">
                 <h3>Project 2: Web Scraper</h3>
@@ -90,20 +92,25 @@
             </div>
         </div>
     </section> 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to contact me through the following channels:</p>
-        <a href="mailto:mhkhaial15@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/mai-khaial-7705bb295/">LinkedIn</a>
-        <a href="https://github.com/m2khaial">GitHub</a>
-    </section>   
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-icons">
+                <a href="mailto:mhkhaial15@gmail.com"><img src="email_icon.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/mai-khaial-7705bb295/"><img src="linkedin_icon.png" alt="LinkedIn"></a>
+                <a href="https://github.com/m2khaial"><img src="github_icon.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </section>    
     <footer>
-        <h2>Feedback</h2>
-        <form id="feedback-form">
-            <label for="feedback">How can I improve this website?</label>
-            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
-            <button type="submit">Submit</button>
-        </form>
+        <div class="container">
+            <h2>Feedback</h2>
+            <form id="feedback-form">
+                <label for="feedback">How can I improve this website?</label>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
