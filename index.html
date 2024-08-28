@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mai Khaial Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-xxz5vb8VSXqFy3Mz/7KA+szgjQT0CXD4cIOjy2iCW3O93N7/mU2WPhhh5gO+oNiM" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-xxz5vb8VSXqFy3Mz/7KA+szgjQT0CXD4cIOjy2iCW3O93N7/mU2WPhhh5gO+oNiM" crossorigin="anonymous">
 </head>
+
 <body>
     <!-- START NAV -->
     <nav id="navbar" class="nav">
@@ -15,10 +17,8 @@
             <a href="#welcome-section">Mai Khaial Portfolio</a>
         </div>
         <ul class="nav-list">
-            <li><a href="#vba">VBA</a></li>
-            <li><a href="#html">HTML</a></li>
-            <li><a href="#javascript">JavaScript</a></li>
-            <li><a href="#python">Python</a></li>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#projects-section">Projects</a></li>
             <li><a href="#contact-section">Contact</a></li>
         </ul>
     </nav>
@@ -27,90 +27,91 @@
     <!-- START WELCOME SECTION -->
     <section id="welcome-section" class="welcome-section">
         <h1>Welcome to My Portfolio</h1>
-        <p>I am a Management Engineering student at the University of Waterloo. My expertise lies in VBA, Excel, Python, and JavaScript, where I leverage technology to create streamlined and efficient solutions. I am passionate about problem-solving, innovative technology, and delivering user-centric solutions that drive positive business outcomes.</p>
+        <p>I am a Management Engineering student at the University of Waterloo, passionate about using technology to solve complex problems. My expertise includes VBA, Excel, Python, and JavaScript. I am committed to developing innovative solutions that improve efficiency and user experience.</p>
     </section>
     <!-- END WELCOME SECTION -->
 
-    <!-- START VBA PROJECTS SECTION -->
-    <section id="vba" class="projects-section">
-        <h2 class="projects-section-header">VBA Projects</h2>
+    <!-- START PROJECTS SECTION WITH FILTERS -->
+    <section id="projects-section" class="projects-section">
+        <h2 class="projects-section-header">Projects</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('vba')">VBA</button>
+            <button onclick="filterProjects('html')">HTML</button>
+            <button onclick="filterProjects('javascript')">JavaScript</button>
+            <button onclick="filterProjects('python')">Python</button>
+        </div>
+
+        <!-- Projects Grid -->
         <div class="projects-grid">
-            <div class="project project-tile">
-                <img src="images/vba_project1.png" alt="VBA Project 1">
+            <!-- VBA Projects -->
+            <div class="project project-tile" data-category="vba">
+                <img src="images/vba_project1.png" alt="Excel Automation Project">
                 <p>Excel Automation: Automates data entry and analysis in Excel using VBA scripts.</p>
             </div>
-            <div class="project project-tile">
-                <img src="images/vba_project2.png" alt="VBA Project 2">
+            <div class="project project-tile" data-category="vba">
+                <img src="images/vba_project2.png" alt="Dynamic Reporting Dashboard">
                 <p>Reporting Dashboard: Created a dynamic reporting dashboard with interactive charts and summaries.</p>
             </div>
-        </div>
-    </section>
-    <!-- END VBA PROJECTS SECTION -->
 
-    <!-- START HTML PROJECTS SECTION -->
-    <section id="html" class="projects-section">
-        <h2 class="projects-section-header">HTML Projects</h2>
-        <div class="projects-grid">
-            <div class="project project-tile">
-                <img src="images/html_project1.png" alt="HTML Project 1">
+        
+
+            <!-- HTML Projects -->
+            <div class="project project-tile" data-category="html">
+                <img src="images/html_project1.png" alt="Personal Blog Project">
                 <p>Personal Blog: Developed a personal blog site with responsive design and SEO optimization.</p>
             </div>
-            <div class="project project-tile">
-                <img src="images/html_project2.png" alt="HTML Project 2">
+            <div class="project project-tile" data-category="html">
+                <img src="images/html_project2.png" alt="Portfolio Website Project">
                 <p>Portfolio Website: Designed and implemented a portfolio website to showcase projects and skills.</p>
             </div>
-        </div>
-    </section>
-    <!-- END HTML PROJECTS SECTION -->
 
-    <!-- START JAVASCRIPT PROJECTS SECTION -->
-    <section id="javascript" class="projects-section">
-        <h2 class="projects-section-header">JavaScript Projects</h2>
-        <div class="projects-grid">
-            <div class="project project-tile">
-                <img src="images/js_project1.png" alt="JavaScript Project 1">
+
+            <!-- JavaScript Projects -->
+            <div class="project project-tile" data-category="javascript">
+                <img src="images/js_project1.png" alt="Interactive To-Do List Project">
                 <p>Interactive To-Do List: Created an interactive to-do list application with dynamic DOM manipulation.</p>
             </div>
-            <div class="project project-tile">
+            <div class="project project-tile" data-category="javascript">
                 <img src="https://www.shutterstock.com/image-illustration/man-standing-front-fire-dragon-600nw-2344891369.jpg" alt="Knight Fighting Dragon">
-    <p>Dragon Game: 
-        <a href="https://github.com/m2khaial/dragon_game_java" target="_blank">GitHub Repository</a> | 
-        <a href="https://m2khaial.github.io/dragon_game_java/" target="_blank">Live Demo</a>
+                <p>Dragon Game:
+                    <a href="https://github.com/m2khaial/dragon_game_java" target="_blank">GitHub Repository</a> |
+                    <a href="https://m2khaial.github.io/dragon_game_java/" target="_blank">Live Demo</a>
+                </p>
             </div>
-        </div>
-    </section>
-    <!-- END JAVASCRIPT PROJECTS SECTION -->
 
-    <!-- START PYTHON PROJECTS SECTION -->
-    <section id="python" class="projects-section">
-        <h2 class="projects-section-header">Python Projects</h2>
-        <div class="projects-grid">
-            <div class="project project-tile">
-                <img src="images/python_project1.png" alt="Python Project 1">
+
+            <!-- Python Projects -->
+            <div class="project project-tile" data-category="python">
+                <img src="images/python_project1.png" alt="Data Analysis Project">
                 <p>Data Analysis: Performed data analysis on a large dataset using pandas and matplotlib.</p>
             </div>
-            <div class="project project-tile">
-                <img src="images/python_project2.png" alt="Python Project 2">
+            <div class="project project-tile" data-category="python">
+                <img src="images/python_project2.png" alt="Web Scraper Project">
                 <p>Web Scraper: Built a web scraper to collect data from various websites for research purposes.</p>
             </div>
         </div>
     </section>
-    <!-- END PYTHON PROJECTS SECTION -->
+    <!-- END PROJECTS SECTION -->
 
     <!-- START CONTACT SECTION -->
     <section id="contact-section" class="contact-section">
         <h2>Contact Me</h2>
-        <p>Feel free to contact me through the following channels:</p>
+        <p>Feel free to reach out through the following platforms:</p>
         <div class="contact-links">
             <a href="https://github.com/m2khaial" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
             <a href="mailto:mhkhaial15@gmail.com" class="btn contact-details"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://www.linkedin.com/in/mai-khaial/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        </div>        
+        </div>
     </section>
     <!-- END CONTACT SECTION -->
-     <!--BACK TO TOP BUTTON-->
-    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
-    <!-- START FOOTER SECTION -->
+    
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i> Top</button>
+
+    <!-- Footer with Feedback Form -->
     <footer>
         <h2>Feedback</h2>
         <form id="feedback-form">
@@ -119,8 +120,9 @@
             <button type="submit">Submit</button>
         </form>
     </footer>
-    <!-- END FOOTER SECTION -->
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
